@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Stationery Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/background3.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header p {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Times New Roman', serif;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 20px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+
+    ul li a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .title {
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .title h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .choices {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .choices a {
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 30px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-size: 18px;
+      text-align: center;
+      min-width: 180px;
+    }
+
+    .choices a:hover {
+      background-color: #fff;
+      color: #000;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <p>Stationery Store</p>
+    <ul>
+      <li><a href="#" class="active">Home Page</a></li>
+      <li><a href="adminLogin.php">Log Out</a></li>
+    </ul>
+  </div>
+
+  <!-- Title -->
+  <div class="title">
+    <h1>WELCOME TO ADMIN DASHBOARD</h1>
+  </div>
+
+  <!-- Choices -->
+  <div class="choices">
+    <a href="addStock.php" class="d">Add Stock</a>
+    <a href="viewStock.php" class="a">View Stock</a>
+	  <a href="orderHistory.php" class="e">Order History</a>
+    <a href="updateOrderStatus.php" class="e">OrderStatus</a>
+    <a href="viewPaymentDetails.php" class="c">View Payment Details</a>
+    
+  </div>
+</body>
+</html>
