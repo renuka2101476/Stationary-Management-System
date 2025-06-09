@@ -1,4 +1,4 @@
-# Stationery-Web-Portal
+# Stationery-Management-System
 
 <p>
   <h3>Built Using:</h3>
